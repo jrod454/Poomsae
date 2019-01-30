@@ -1,20 +1,114 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+<body class="bg-light">
+<div class="container">
+    <div class="row">
+      <div class="col-md-12 mb-3 text-center">
+        <h2>Technical Skills</h2>
+      </div>
+    </div>
 
+    <div class="row">
+      <div class="col-md-12 order-md-1">
+
+        <div class="row">
+          <div class="col-md-12 mb-3 text-center">
+            <h4>Level of Difficulty of Foot Techniques</h4>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-2 mb-3">
+            <label for="heightJump">Height of jump</label>
+            <input [(ngModel)]="heightJump" type="number" class="form-control" id="heightJump" step="0.1" max="1" min="0" placeholder="0">
+          </div>
+          <div class="col-md-2 mb-3">
+            <label for="numJumpKicks">Number of Jump Kicks</label>
+            <input [(ngModel)]="numJumpKicks" type="number" class="form-control" id="numJumpKicks" step="0.1" max="1" min="0" placeholder="0" value="" required>
+          </div>
+          <div class="col-md-2 mb-3">
+            <label for="turnGradient">Gradient of Turn</label>
+            <input [(ngModel)]="turnGradient" type="number" class="form-control" id="turnGradient" step="0.1" max="1" min="0" placeholder="0" value="" required>
+          </div>
+          <div class="col-md-4 mb-3">
+            <label for="kickPerformance">Performance level of consecutive kicks</label>
+            <input [(ngModel)]="kickPerformance" type="number" class="form-control" id="kickPerformance" step="0.1" max="1" min="0" placeholder="0" value="" required>
+          </div>
+          <div class="col-md-2 mb-3">
+            <label for="acrobatic">Acrobatic Actions</label>
+            <input [(ngModel)]="acrobatic" type="number" class="form-control" id="acrobatic" step="0.1" max="1" min="0" placeholder="0" value="" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 mb-3 text-center">
+            <h4>Basic Movements & Practicability</h4>
+          </div>
+          <div class="col-md-2 mb-3 mx-auto">
+            <input [(ngModel)]="basicMovement" type="number" class="form-control" id="basicMovement" step="0.1" max="1" min="0" placeholder="0" value="" required>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 mb-3 text-center">
+            <hr class="mb-4">
+            <h2>Presentation</h2>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="creativeness">Creativeness</label>
+            <input [(ngModel)]="creativeness" type="number" class="form-control" id="creativeness" step="0.1" max="1" min="0" placeholder="0" value="" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="harmony">Harmony</label>
+            <input [(ngModel)]="harmony" type="number" class="form-control" id="harmony" step="0.1" max="1" min="0" placeholder="0" value="" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="energyExp">Expression of Energy</label>
+            <input [(ngModel)]="energyExp" type="number" class="form-control" id="energyExp" step="0.1" max="1" min="0" placeholder="0" value="" required>
+            <div class="invalid-feedback">
+              Valid last name is required.
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="music">Music & Choreography</label>
+            <input [(ngModel)]="music" type="number" class="form-control" id="music" step="0.1" max="1" min="0" placeholder="0" value="" required>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-3 text-center">
+        <hr class="mb-4">
+        <h3>Deductions</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3 mb-3 mx-auto">
+        <input [(ngModel)]="deductions" type="number" class="form-control" id="deductions" step="0.1" max="0" min="-10" placeholder="0" value="" required>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12 mb-3 text-center">
+        <hr class="mb-4">
+        <h2 (click)="techScore()">Final Scores</h2>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 mb-3 mx-auto">
+        <label for="techScore">Technical Skills</label>
+        <input class="form-control" id="techScore" [value]="techScore()" readonly>
+      </div>
+      <div class="col-md-2 mb-3 mx-auto">
+        <label for="presScore">Presentation</label>
+        <input class="form-control" id="presScore" [value]="presScore()" readonly>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-2 mb-3 mx-auto">
+        <label for="totalScore">Total Score</label>
+        <input class="form-control" id="totalScore" [value]="totalScore() | number:'.2'" readonly>
+      </div>
+    </div>
+</div>
+</body>
